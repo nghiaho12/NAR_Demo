@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NAR_Demo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="NAR_Demo_Debug" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wshadow" />
+					<Add option="-Winit-self" />
+					<Add option="-Wredundant-decls" />
+					<Add option="-Wundef" />
+					<Add option="-Winline" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wmissing-declarations" />
+					<Add option="-Wmissing-include-dirs" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wswitch-default" />
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-fstack-protector-all" />
+					<Add option="-D_GLIBCXX_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="NAR_Demo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wshadow" />
+					<Add option="-Winit-self" />
+					<Add option="-Winline" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-march=native" />
+			<Add option="-fopenmp" />
+		</Compiler>
+		<Linker>
+			<Add library="Irrlicht" />
+			<Add library="Xxf86vm" />
+			<Add library="Xext" />
+			<Add library="X11" />
+			<Add library="GL" />
+			<Add library="boost_thread" />
+			<Add library="opencv_core" />
+			<Add library="opencv_highgui" />
+			<Add library="opencv_features2d" />
+			<Add library="opencv_video" />
+			<Add library="opencv_imgproc" />
+			<Add library="opencv_ml" />
+			<Add library="opencv_calib3d" />
+		</Linker>
+		<Unit filename="NAR/AlphaBetaTracker.cpp" />
+		<Unit filename="NAR/AlphaBetaTracker.h" />
+		<Unit filename="NAR/BaseThread.cpp" />
+		<Unit filename="NAR/BaseThread.h" />
+		<Unit filename="NAR/CpuID.cpp" />
+		<Unit filename="NAR/CpuID.h" />
+		<Unit filename="NAR/DoG.cpp" />
+		<Unit filename="NAR/DoG.h" />
+		<Unit filename="NAR/ExtractFeatureThread.cpp" />
+		<Unit filename="NAR/ExtractFeatureThread.h" />
+		<Unit filename="NAR/KTree.cpp" />
+		<Unit filename="NAR/KTree.h" />
+		<Unit filename="NAR/KeyPointThread.cpp" />
+		<Unit filename="NAR/KeyPointThread.h" />
+		<Unit filename="NAR/NAR.cpp" />
+		<Unit filename="NAR/NAR.h" />
+		<Unit filename="NAR/NAR_Config.h" />
+		<Unit filename="NAR/NAR_Sig.cpp" />
+		<Unit filename="NAR/NAR_Sig.h" />
+		<Unit filename="NAR/RPP.cpp" />
+		<Unit filename="NAR/RPP.h" />
+		<Unit filename="NAR/Rpoly.cpp" />
+		<Unit filename="NAR/Rpoly.h" />
+		<Unit filename="NAR/ThreadJob.h" />
+		<Unit filename="VideoThread.cpp" />
+		<Unit filename="VideoThread.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

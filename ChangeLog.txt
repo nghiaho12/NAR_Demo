@@ -1,0 +1,14 @@
+2012-02-05    
+	 * NAR Demo 0.2.1 released    
+    * Added system documentation (draft)
+    * Added check to see if det <= 0 in DOG.cpp
+    * Changed f32 to s32 in main.cpp for polygon draw
+
+2012-01-27
+	* NAR Demo 0.2.0 released
+	* Minor bug fixe when calculating the predicted search region
+	* Added optical flow support (experimental). Improves stability (less jittering), and allows for greater out of plane rotations.
+	* Refactored/cleaned up NAR::FindARObject(), individual processes in FindARObject now have their own functions
+	
+2012-01-24
+	* NAR Demo 0.1.0 first release

@@ -1,0 +1,229 @@
+# depslib dependency file v1.0
+1328271873 source:/home/nghia/Projects/NAR_Demo/main.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<cmath>
+	<opencv2/highgui/highgui.hpp>
+	"VideoThread.h"
+	<irrlicht.h>
+	<irrlicht/irrlicht.h>
+
+1327413173 source:/home/nghia/Projects/NAR_Demo/NAR/AlphaBetaTracker.cpp
+	"AlphaBetaTracker.h"
+	<cstdio>
+
+1327104933 /home/nghia/Projects/NAR_Demo/NAR/AlphaBetaTracker.h
+
+1320654929 source:/home/nghia/Projects/NAR_Demo/NAR/Bit.cpp
+	"Bit.h"
+	<cmath>
+
+1320654929 /home/nghia/Projects/NAR_Demo/NAR/Bit.h
+	<assert.h>
+	<vector>
+
+1327191710 source:/home/nghia/Projects/NAR_Demo/NAR/KTree.cpp
+	"KTree.h"
+	<iostream>
+
+1327191710 /home/nghia/Projects/NAR_Demo/NAR/KTree.h
+	<vector>
+	<opencv2/core/core.hpp>
+	<opencv2/core/core_c.h>
+	"NAR_Sig.h"
+	"NAR_Config.h"
+
+1327500326 /home/nghia/Projects/NAR_Demo/NAR/NAR_Sig.h
+	"NAR_Config.h"
+	<iostream>
+	<cstdlib>
+	<vector>
+	<opencv2/core/core.hpp>
+
+1327191710 /home/nghia/Projects/NAR_Demo/NAR/NAR_Config.h
+
+1327586717 source:/home/nghia/Projects/NAR_Demo/NAR/NAR.cpp
+	<numeric>
+	<iostream>
+	<cstdio>
+	<cmath>
+	<sstream>
+	<nmmintrin.h>
+	<opencv2/core/core.hpp>
+	<opencv2/video/tracking.hpp>
+	<opencv2/calib3d/calib3d.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	"NAR.h"
+	"RPP.h"
+	"DoG.h"
+	"KeyPointThread.h"
+	"ExtractFeatureThread.h"
+	"CpuID.h"
+
+1327583592 /home/nghia/Projects/NAR_Demo/NAR/NAR.h
+	<vector>
+	<deque>
+	<boost/thread/mutex.hpp>
+	<boost/thread/thread.hpp>
+	<opencv2/features2d/features2d.hpp>
+	"NAR_Sig.h"
+	"NAR_Config.h"
+	"KTree.h"
+	"AlphaBetaTracker.h"
+	"KTree.h"
+	"ThreadJob.h"
+	"KeyPointThread.h"
+	"ExtractFeatureThread.h"
+
+1323247014 /home/nghia/Projects/NAR_Demo/NAR/RPP.h
+	<opencv2/core/core.hpp>
+	<vector>
+	"Rpoly.h"
+
+1323247014 /home/nghia/Projects/NAR_Demo/NAR/Rpoly.h
+
+1327107887 source:/home/nghia/Projects/NAR_Demo/NAR/NAR_Sig.cpp
+	"NAR_Sig.h"
+	<string.h>
+	<assert.h>
+
+1327191710 source:/home/nghia/Projects/NAR_Demo/NAR/RPP.cpp
+	"RPP.h"
+	<cstdio>
+	<cmath>
+
+1327191710 source:/home/nghia/Projects/NAR_Demo/NAR/Rpoly.cpp
+	"Rpoly.h"
+	<iostream>
+	<fstream>
+	<cctype>
+	<cfloat>
+	<cmath>
+
+1327112807 source:/home/nghia/Projects/NAR_Demo/VideoThread.cpp
+	"VideoThread.h"
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+
+1326966315 /home/nghia/Projects/NAR_Demo/VideoThread.h
+	<deque>
+	<boost/thread/thread.hpp>
+	<boost/thread/mutex.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	"NAR/NAR.h"
+
+1326723951 source:/home/nghia/Projects/NAR_Demo/ProcessThread.cpp
+	<assert.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	"ProcessThread.h"
+	"VideoThread.h"
+
+1326104050 /home/nghia/Projects/NAR_Demo/ProcessThread.h
+	<boost/thread/thread.hpp>
+	"NAR/NAR.h"
+
+1323423577 source:/home/nghia/Projects/NAR_Demo/NAR/FeatureDetector.cpp
+	"FeatureDetector.h"
+
+1323422391 /home/nghia/Projects/NAR_Demo/NAR/FeatureDetector.h
+	<vector>
+	<opencv2/features2d/features2d.hpp>
+
+1325470168 /home/nghia/Projects/NAR_Demo/NAR/RandomPairs.h
+
+1328271793 source:/home/nghia/Projects/NAR_Demo/NAR/DoG.cpp
+	<opencv2/imgproc/imgproc.hpp>
+	"NAR_Config.h"
+	"DoG.h"
+
+1326880839 /home/nghia/Projects/NAR_Demo/NAR/DoG.h
+	<vector>
+	<opencv2/core/core.hpp>
+
+1326103210 source:/home/nghia/Projects/NAR_Demo/KeyPointThread.cpp
+	"KeyPointThread.h"
+	<assert.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	"VideoThread.h"
+
+1326103773 /home/nghia/Projects/NAR_Demo/KeyPointThread.h
+	<boost/thread/thread.hpp>
+	<opencv2/core/core.hpp>
+	<deque>
+	<vector>
+
+1327191710 source:/home/nghia/Projects/NAR_Demo/NAR/KeyPointThread.cpp
+	<assert.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	"KeyPointThread.h"
+	"DoG.h"
+	"NAR.h"
+
+1326880690 /home/nghia/Projects/NAR_Demo/NAR/KeyPointThread.h
+	<boost/thread/thread.hpp>
+	<opencv2/core/core.hpp>
+	<deque>
+	<vector>
+	"BaseThread.h"
+
+1327319623 /home/nghia/Projects/NAR_Demo/NAR/ExtractFeatureThread.h
+	<opencv2/core/core.hpp>
+	<boost/thread/thread.hpp>
+	"NAR_Sig.h"
+	"BaseThread.h"
+
+1327319608 source:/home/nghia/Projects/NAR_Demo/NAR/ExtractFeatureThread.cpp
+	"ExtractFeatureThread.h"
+	<assert.h>
+	<opencv2/core/core.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	<smmintrin.h>
+	"KeyPointThread.h"
+	"DoG.h"
+
+1326446755 source:/home/nghia/Projects/NAR_Demo/NAR/Homography.cpp
+	"Homography.h"
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/features2d/features2d.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<cstdio>
+
+1326445789 /home/nghia/Projects/NAR_Demo/NAR/Homography.h
+	<opencv2/core/core.hpp>
+	<vector>
+
+1326527646 /home/nghia/Projects/NAR_Demo/NAR/ThreadData.h
+	<vector>
+	<opencv2/core/core.hpp>
+
+1327581720 /home/nghia/Projects/NAR_Demo/NAR/ThreadJob.h
+	<vector>
+	<opencv2/core/core.hpp>
+	"NAR_Sig.h"
+
+1327104064 /home/nghia/Projects/NAR_Demo/NAR/BaseThread.h
+	<boost/thread/thread.hpp>
+	<deque>
+	<string>
+	"ThreadJob.h"
+
+1327125291 source:/home/nghia/Projects/NAR_Demo/NAR/BaseThread.cpp
+	"BaseThread.h"
+	<iostream>
+
+1327191710 source:/home/nghia/Projects/NAR_Demo/NAR/CpuID.cpp
+	"CpuID.h"
+	<intrin.h>
+
+1327107515 /home/nghia/Projects/NAR_Demo/NAR/CpuID.h
+
