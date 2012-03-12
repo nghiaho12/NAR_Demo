@@ -361,6 +361,9 @@ bool NAR::PoseEstimation(const cv::Mat &H)
 
     t1 = boost::posix_time::microsec_clock::local_time();
 
+    // H * m_AR_object_image_pts = 4 corner points
+    // I use the 4 corners instead of ALL the points.
+    // Why do I do this? It's faster, but maybe less accurate?
     cv::Mat image_pts = m_inv_camera_intrinsics * H * m_AR_object_image_pts;
 
     double obj_err, img_err;

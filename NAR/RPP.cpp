@@ -1,6 +1,5 @@
 #include "RPP.h"
 #include <cstdio>
-#include <cmath>
 
 using namespace std;
 using namespace cv;
@@ -525,7 +524,7 @@ Mat Mean(const Mat &m)
 
 Mat Point2Mat(const vector <Point3d> &pts)
 {
-    Mat ret(3, (int)pts.size(), CV_64F);
+    Mat ret(3, pts.size(), CV_64F);
 
     for(unsigned int i=0; i < pts.size(); i++) {
         ret.at<double>(0,i) = pts[i].x;
@@ -538,7 +537,7 @@ Mat Point2Mat(const vector <Point3d> &pts)
 
 Mat Point2Mat(const vector <Point2d> &pts)
 {
-    Mat ret(3, (int)pts.size(), CV_64F);
+    Mat ret(3, pts.size(), CV_64F);
 
     for(unsigned int i=0; i < pts.size(); i++) {
         ret.at<double>(0,i) = pts[i].x;
@@ -881,6 +880,11 @@ bool GetRfor2ndPose_V_Exact(const Mat &v, const Mat &P, const Mat &R, const Mat 
 
     GetRotationY_wrtT(v ,P_,t,Rz, bl, Tnew, at);
 
+    // Suggestion by csantos
+    if(bl.empty()) {
+        return false;
+    }
+
     for(unsigned int i=0; i < bl.size(); i++) {
         bl[i] = bl[i]/180*M_PI;
     }
@@ -1193,7 +1197,7 @@ end
     al = al2;
     at = at2;
 
-    tnew = Mat(3, (int)al.size(), CV_64F);
+    tnew = Mat(3,al.size(),CV_64F);
 
     for(unsigned int a=0; a < al.size(); a++) {
         Mat R = Rz*RpyMat(Vec3d(0, (al[a]*M_PI/180), 0));
